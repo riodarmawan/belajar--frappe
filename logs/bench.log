@@ -1,0 +1,78 @@
+2025-12-21 20:57:56,125 DEBUG cd library && python3 -m venv env
+2025-12-21 20:58:03,510 DEBUG cd library && /home/kucingsakti/finalLatihan/library/env/bin/python -m pip install --quiet --upgrade pip
+2025-12-21 20:58:07,277 DEBUG cd library && /home/kucingsakti/finalLatihan/library/env/bin/python -m pip install --quiet wheel
+2025-12-21 20:58:09,169 LOG Getting frappe
+2025-12-21 20:58:09,170 DEBUG cd library/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-12-21 20:59:12,649 LOG Installing frappe
+2025-12-21 20:59:12,652 DEBUG cd /home/kucingsakti/finalLatihan/library && /home/kucingsakti/finalLatihan/library/env/bin/python -m pip install --quiet --upgrade -e /home/kucingsakti/finalLatihan/library/apps/frappe 
+2025-12-21 21:01:53,710 DEBUG cd /home/kucingsakti/finalLatihan/library/apps/frappe && yarn install --check-files
+2025-12-21 21:02:49,516 DEBUG cd library && bench build
+2025-12-21 21:02:50,269 INFO /home/kucingsakti/frappe/bin/bench build
+2025-12-21 21:04:25,338 LOG setting up backups
+2025-12-21 21:04:25,412 LOG backups were set up
+2025-12-21 21:04:25,414 INFO Bench library initialized
+2025-12-21 21:04:47,605 INFO /home/kucingsakti/frappe/bin/bench start
+2025-12-21 21:04:48,922 INFO /home/kucingsakti/frappe/bin/bench watch
+2025-12-21 21:04:49,089 INFO /home/kucingsakti/frappe/bin/bench worker
+2025-12-21 21:04:49,188 INFO /home/kucingsakti/frappe/bin/bench serve --port 8000
+2025-12-21 21:04:49,308 INFO /home/kucingsakti/frappe/bin/bench schedule
+2025-12-21 21:05:30,637 INFO /home/kucingsakti/frappe/bin/bench start
+2025-12-21 21:05:32,258 INFO /home/kucingsakti/frappe/bin/bench worker
+2025-12-21 21:05:32,314 INFO /home/kucingsakti/frappe/bin/bench serve --port 8000
+2025-12-21 21:05:32,420 INFO /home/kucingsakti/frappe/bin/bench watch
+2025-12-21 21:05:32,479 INFO /home/kucingsakti/frappe/bin/bench schedule
+2025-12-21 21:42:44,194 INFO /home/kucingsakti/frappe/bin/bench new-app library_management
+2025-12-21 21:42:44,227 LOG creating new app library_management
+2025-12-21 21:44:09,685 LOG Installing library_management
+2025-12-21 21:44:09,686 DEBUG cd /home/kucingsakti/finalLatihan/library && /home/kucingsakti/finalLatihan/library/env/bin/python -m pip install --quiet --upgrade -e /home/kucingsakti/finalLatihan/library/apps/library_management 
+2025-12-21 21:44:14,726 DEBUG bench build --app library_management
+2025-12-21 21:44:15,045 INFO /home/kucingsakti/frappe/bin/bench build --app library_management
+2025-12-21 21:44:39,812 INFO /home/kucingsakti/frappe/bin/bench start
+2025-12-21 21:44:40,776 INFO /home/kucingsakti/frappe/bin/bench serve --port 8000
+2025-12-21 21:44:40,868 INFO /home/kucingsakti/frappe/bin/bench worker
+2025-12-21 21:44:40,896 INFO /home/kucingsakti/frappe/bin/bench watch
+2025-12-21 21:44:41,026 INFO /home/kucingsakti/frappe/bin/bench schedule
+2025-12-21 21:45:55,713 INFO /home/kucingsakti/frappe/bin/bench new-site library.localhost
+2025-12-21 21:46:16,649 INFO /home/kucingsakti/frappe/bin/bench new-site library.localhost
+2025-12-21 21:47:07,507 INFO /home/kucingsakti/frappe/bin/bench drop-site library.localhost
+2025-12-21 21:47:27,297 INFO /home/kucingsakti/frappe/bin/bench drop-site library.localhost
+2025-12-21 21:47:36,425 INFO /home/kucingsakti/frappe/bin/bench drop-site library.localhost
+2025-12-21 21:48:14,650 INFO /home/kucingsakti/frappe/bin/bench drop-site library.localhost --force --no-backup
+2025-12-21 21:48:26,920 INFO /home/kucingsakti/frappe/bin/bench drop-site library.localhost --force --no-backup
+2025-12-21 21:49:30,305 INFO /home/kucingsakti/frappe/bin/bench new-site library.localhost
+2025-12-21 21:51:17,925 INFO /home/kucingsakti/frappe/bin/bench start
+2025-12-21 21:51:18,900 INFO /home/kucingsakti/frappe/bin/bench serve --port 8000
+2025-12-21 21:51:19,024 INFO /home/kucingsakti/frappe/bin/bench schedule
+2025-12-21 21:51:19,057 INFO /home/kucingsakti/frappe/bin/bench worker
+2025-12-21 21:51:19,125 INFO /home/kucingsakti/frappe/bin/bench watch
+2025-12-21 21:52:18,345 INFO /home/kucingsakti/frappe/bin/bench --site library.localhost add-hosts
+2025-12-21 21:52:23,914 INFO /home/kucingsakti/frappe/bin/bench --site library.localhost add-to-hosts
+2025-12-21 21:53:08,936 INFO /home/kucingsakti/frappe/bin/bench --site library.localhost install-app library-management
+2025-12-21 21:53:16,964 INFO /home/kucingsakti/frappe/bin/bench --site library.localhost install-app library_management
+2025-12-21 21:53:27,998 INFO /home/kucingsakti/frappe/bin/bench start
+2025-12-21 21:53:29,376 INFO /home/kucingsakti/frappe/bin/bench watch
+2025-12-21 21:53:29,381 INFO /home/kucingsakti/frappe/bin/bench worker
+2025-12-21 21:53:29,396 INFO /home/kucingsakti/frappe/bin/bench schedule
+2025-12-21 21:53:29,708 INFO /home/kucingsakti/frappe/bin/bench serve --port 8000
+2025-12-21 21:54:06,236 INFO /home/kucingsakti/frappe/bin/bench --site library.localhost list-apps
+2025-12-21 21:54:35,920 INFO /home/kucingsakti/frappe/bin/bench start
+2025-12-21 21:54:37,175 INFO /home/kucingsakti/frappe/bin/bench worker
+2025-12-21 21:54:37,193 INFO /home/kucingsakti/frappe/bin/bench schedule
+2025-12-21 21:54:37,344 INFO /home/kucingsakti/frappe/bin/bench serve --port 8000
+2025-12-21 21:54:37,444 INFO /home/kucingsakti/frappe/bin/bench watch
+2025-12-21 21:56:46,154 INFO /home/kucingsakti/frappe/bin/bench start
+2025-12-21 21:56:47,354 INFO /home/kucingsakti/frappe/bin/bench worker
+2025-12-21 21:56:47,426 INFO /home/kucingsakti/frappe/bin/bench serve --port 8000
+2025-12-21 21:56:47,518 INFO /home/kucingsakti/frappe/bin/bench watch
+2025-12-21 21:56:47,746 INFO /home/kucingsakti/frappe/bin/bench schedule
+2025-12-21 21:59:16,056 INFO /home/kucingsakti/frappe/bin/bench set-config -g developer_mode true
+2025-12-21 21:59:20,045 INFO /home/kucingsakti/frappe/bin/bench start
+2025-12-21 21:59:23,036 INFO /home/kucingsakti/frappe/bin/bench schedule
+2025-12-21 21:59:23,263 INFO /home/kucingsakti/frappe/bin/bench watch
+2025-12-21 21:59:23,271 INFO /home/kucingsakti/frappe/bin/bench worker
+2025-12-21 21:59:23,515 INFO /home/kucingsakti/frappe/bin/bench serve --port 8000
+2025-12-22 14:18:28,240 INFO /home/kucingsakti/frappe/bin/bench start
+2025-12-22 14:18:31,218 INFO /home/kucingsakti/frappe/bin/bench schedule
+2025-12-22 14:18:31,331 INFO /home/kucingsakti/frappe/bin/bench worker
+2025-12-22 14:18:31,361 INFO /home/kucingsakti/frappe/bin/bench watch
+2025-12-22 14:18:31,408 INFO /home/kucingsakti/frappe/bin/bench serve --port 8000
